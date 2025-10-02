@@ -16,3 +16,59 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* .gallery {
+  max-width: 1128px;
+  padding: 24px 0;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 24px;
+
+  flex-basis: calc((100% - 48px) / 2);
+
+  overflow: hidden;
+}
+
+.gallery-item {
+  list-style-type: none;
+}
+
+.gallery-image {
+  max-width: 360px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+} */
+
+.gallery {
+  max-width: 1128px;
+  padding: 24px 0;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  list-style: none;
+  flex: 1 1 300px;
+  max-width: 360px;
+}
+
+.gallery-image {
+  width: 100%;
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
