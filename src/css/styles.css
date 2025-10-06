@@ -47,8 +47,6 @@
 /* #endregion Gallery */
 
 /* #region Feedback */
-
-/* Основний контейнер сторінки */
 main {
   display: flex;
   flex-direction: column;
@@ -58,47 +56,38 @@ main {
   background-color: #f5f5f5;
 }
 
-/* Форма */
 .feedback-form {
   display: flex;
   flex-direction: column;
-  align-items: center; /* центруємо форму */
+  align-items: center;
   gap: 24px;
   width: 408px;
   padding: 24px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
-/* Лейбл */
 .feedback-form label {
   display: flex;
   flex-direction: column;
-  align-items: center; /* поле по центру форми */
   gap: 8px;
   width: 100%;
-  font-size: 14px;
-  color: #2e2f42;
-}
+  max-width: 360px;
+  margin: 0 auto;
 
-/* Текст лейбла */
-.feedback-form .label-text {
-  /* font: 400 16px / 1.5 'Montserrat', sans-serif;
+  font: 400 16px / 1.5 'Montserrat', sans-serif;
   letter-spacing: 0.04em;
-  color: #2e2f42; */
+  color: #2e2f42;
 
-  align-self: flex-start; /* текст Email/Message ліворуч */
   text-align: left;
 }
 
-/* Поля вводу */
 .feedback-form input,
 .feedback-form textarea {
   display: block;
   width: 100%;
   max-width: 360px;
-  margin: 0 auto; /* по центру форми */
+  margin: 0 auto;
   padding: 10px 14px;
   border: 1px solid #808080;
   border-radius: 4px;
@@ -109,21 +98,18 @@ main {
   text-align: left;
 }
 
-/* hover */
 .feedback-form input:hover,
 .feedback-form textarea:hover {
   border-color: #000;
 }
 
-/* focus */
 .feedback-form input:focus,
 .feedback-form textarea:focus {
   border-color: #808080;
 }
 
-/* Кнопка */
 .feedback-form button {
-  align-self: flex-start; /* кнопка зліва */
+  align-self: flex-start;
   width: 95px;
   height: 40px;
   padding: 8px 16px;
@@ -140,9 +126,7 @@ main {
   letter-spacing: 0.04em;
 }
 
-/* hover кнопки */
 .feedback-form button:hover {
   background: #6c8cff;
 }
-
 /* #endregion Feedback */
